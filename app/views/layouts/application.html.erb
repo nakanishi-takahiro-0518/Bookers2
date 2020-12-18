@@ -10,6 +10,19 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+
+    <div class='body' style="margin-top: 60px;">
+      <div class='container'>
+        
+        
+        <p id="notice"><%= notice %></p>
+      
+        <%= yield %>
+      </div>
+    </div>
+
+    <%= render 'layouts/footer' %>
+
   </body>
 </html>
